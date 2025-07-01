@@ -1,0 +1,11 @@
+
+<!DOCTYPE html>
+<html><body>
+<h2>My Orders</h2>
+<ul>
+{% for o in orders %}
+    <li>{{ o.name }} - {{ o.status }} {% if o.status == 'ordered' %}<a href="/cancel/{{ o.id }}">Cancel</a>{% endif %}</li>
+{% endfor %}
+</ul>
+<a href="/">Back</a>
+</body></html>
