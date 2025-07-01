@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/yourusername/ecommerce-app.git'
+                git 'https://github.com/hoangnhobe/ecommerce-app.git'
             }
         }
         stage('Build and Deploy') {
